@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400:500:600');
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.container {
+  padding: 25px 120px;
+}
+
+.navbar {
+  float: right;
+  height: 100px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 25px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 22px;
+  color: #000000;
+}
+
+.navbar-link:hover {
+  color: #00B894;
+  font-weight: bold;
+}
+
+.welcome {
+  margin-top: 180px;
+}
+
+.welcome-header {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 45px;
+  color: #2D3436;
+}
+
+.emphasize {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  color: #00B894;
+}
+
+.welcome-tagline {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: #2D3436;
+  text-decoration: none;
+}
+
+.welcome-tagline:hover {
+  color: #00B894;
+  font-weight: bold;
+}
+
+.welcome-subheader {
+  margin-top: 20px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 32px;
+  width: 82%;
+  height: 150px;
+  color: #2D3436;
+}
+
+.fa-envelope {
+  color:  #00B894;
+}
+
+.fa-twitter {
+  color:  #1dcaff;
+}
+
+.fa-linkedin {
+  color: #0077B5;
+}
+
+.fa-github {
+  color: black;
+}
+
+.go-down {
+  font-size: 30px;
+}
+
+.lets-connect {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+  padding: 15px 25px;
+  padding-bottom: 35px;
+  z-index: 1;
+
+  background: rgba(0, 184, 148, 0.97);
+}
+
+.lets-connect-header {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 22px;
+
+  color: #FFFFFF;
+
+  mix-blend-mode: normal;
+}
+
+.social-link {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+
+  color: #FFFFFF;
+  width: 33%;
+  opacity: 0.95;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.social-link:hover {
+  font-weight: bold;
+}
+
+.about {
+  position: relative;
+  margin-top: 10vh;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  height: 350px;
+}
+
+.section-header {
+  width: 20%;
+  float: left;
+  margin: 0;
+
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+
+  color: #00B894;
+}
+
+.section-body {
+  width: 80%;
+  float: right;
+}
+
+.about-me-body {
+  font-family: Muli;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 18px;
+
+  color: #000000;
+}
+
+.experience {
+  height: 350px;
+  margin-bottom: 250px;
+  padding-top: 100px;
+}
+
+.exp-head {
+  width: 100%;
+  float: left;
+}
+
+.experience-body {
+  margin-bottom: 50px;
+}
+
+.exp-company {
+  float: left;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  margin: 5px 0px;
+  color: #000000;  
+}
+
+.exp-date {
+  float: right;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.exp-description {
+  font-size: 16px;
+}
+
+.exp-role {
+  font-size: 18px;
+  margin: 5px 0px;
+}
+
+.projects {
+  height: 350px;
+}
+
+.project-text {
+  width: 60%;
+  float: left;
+}
+
+.project-image {
+  width: 30%;
+  float: right;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+.project-head {
+  width: 100%;
+  display: block;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.project-name:visited {
+  color: black;
+}
+
+.project-status {
+  float: right;
+  border: 2px solid #00B894;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 13px;
+  padding: 7px 10px;
+
+  color: #00B894;
+}
+
+.project-description {
+  float: left;
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #00B894;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  /* text-align: center; */
+  padding-bottom: 30px;
+}
+
+.footer-link {
+  text-decoration: none;
+  /* margin-left: 50px; */
+  margin-right: 100px;
+  color: black;
+  font-weight: bold !important;
+  font-size: 25px;
+  line-height: 20px;
+}
+
+.footer-link:hover {
+  font-weight: bolder;
+  color:  #00B894 !important;
+}
+
+.footer-link:visited {
+  color: black;
+}
+
+.footer-links {
+  float: left;
+}
+
+.footer-name {
+  float: right;
+  font-size: 20px;
+  margin: 0;
+}
