@@ -221,7 +221,7 @@ body {
 }
 
 .projects {
-  height: 350px;
+  height: 1600px;
 }
 
 .project-text {
@@ -247,6 +247,7 @@ body {
   float: left;
   text-decoration: none;
   margin-top: 5px;
+  color: black;
 }
 
 .project-name:visited {
@@ -308,7 +309,8 @@ body {
 
 .footer {
   /* text-align: center; */
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-link {
@@ -338,4 +340,12 @@ body {
   float: right;
   font-size: 20px;
   margin: 0;
+}
+
+.project-body {
+  margin-bottom: 100px;
+}
+
+.remove-border {
+  border: none;
 }
