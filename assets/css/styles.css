@@ -559,4 +559,23 @@ body {
   .exp-description {
     font-size: 12px;
   }
+
+  .projects {
+    height: 950px;
+    margin-top: 400px;
+  }
+
+  .project-name {
+    font-size: 12px;
+  }
+
+  .project-status {
+    font-size: 11px;
+    padding: 2px 5px;
+    border-width: 1px;
+  }
+
+  .project-description {
+    font-size: 12px;
+  }
 }
