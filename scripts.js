@@ -12,7 +12,7 @@ const projects = [
         description: "I built a chrome extension that allows Purdue University students to register and use their chrome browser as a device for 2FA to login to various school services and portals.",
         status: "Launched",
         image: "assets/img/boilerkey.png",
-        link: "https://chrome.google.com/webstore/developer/edit/fhligfjjhphjkimickeboacgigjaapjf",
+        link: "https://chrome.google.com/webstore/detail/boilerkey-chrome/iffgcddljpnfeknpdidnemgifdfaamei/",
         border: true
     },
     {
