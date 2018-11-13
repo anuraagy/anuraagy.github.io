@@ -82,11 +82,11 @@ body {
 }
 
 .fa-envelope {
-  color:  #00B894;
+  color: #00B894;
 }
 
 .fa-twitter {
-  color:  #1dcaff;
+  color: #1dcaff;
 }
 
 .fa-linkedin {
@@ -192,6 +192,7 @@ body {
 }
 
 .experience-body {
+  margin-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -201,7 +202,7 @@ body {
   line-height: normal;
   font-size: 18px;
   margin: 5px 0px;
-  color: #000000;  
+  color: #000000;
 }
 
 .exp-date {
@@ -286,6 +287,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-center:before {
   content: "";
   position: absolute;
@@ -302,7 +304,10 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
@@ -325,7 +330,7 @@ body {
 
 .footer-link:hover {
   font-weight: bolder;
-  color:  #00B894 !important;
+  color: #00B894 !important;
 }
 
 .footer-link:visited {
@@ -348,4 +353,210 @@ body {
 
 .remove-border {
   border: none;
+}
+
+/* Mobile time! */
+
+@media screen and (max-width: 1120px) {
+  .footer {
+    padding-bottom: 100px;
+    text-align: center;
+  }
+
+  .footer-link {
+    margin-left: 37.5px;
+    margin-right: 37.5px;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-name {
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .projects {
+    margin-top: 400px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 25px 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-header {
+    font-size: 20px;
+  }
+
+  .experience {
+    padding-top: 200px;
+  }
+
+  .welcome-header {
+    font-size: 40px;
+  }
+
+  .welcome-subheader {
+    font-size: 25px;
+  }
+
+  .welcome-tagline {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section-header {
+    width: 100%;
+  }
+
+  .section-body {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .projects {
+    margin-top: 500px;
+  }
+
+  .navbar {
+    text-align: left;
+    float: unset;
+  }
+
+  .navbar-link {
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+  }
+
+  .welcome {
+    margin-top: 100px;
+  }
+
+  .welcome-header {
+    font-size: 36px;
+    ;
+  }
+
+  .welcome-subheader {
+    font-size: 23px;
+    height: 150px;
+  }
+
+  .welcome-tagline {
+    font-size: 23px;
+    margin-top: 0px;
+  }
+
+  .footer {
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projects {
+    height: 1200px;
+  }
+
+  .project-image {
+    display: none;
+    width: 0%;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  .project-body {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+
+  .footer-name {
+    display: none;
+  }
+
+  .footer-link {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 10px 25px;
+  }
+  
+
+  .navbar-link {
+    font-size: 14px;
+  }
+
+  .welcome {
+    margin-top: 25px;
+  }
+
+  .welcome-header {
+    font-size: 20px;
+  }
+
+  .welcome-subheader{
+    font-size: 16px;
+    height: 100px;  
+    margin-top: 15px;
+  }
+ 
+  .welcome-tagline {
+    font-size: 16px;
+  }
+
+  .section-header {
+    font-size: 16px;
+  }
+
+  .section-body {
+    margin-top: 20px;
+  }
+
+  .about {
+    height: 350px;
+  }
+
+  .about-me-body {
+    font-size: 12px;
+  }
+
+  .experience {
+    padding-top: 100px;
+  }
+
+  .exp-company {
+    font-size: 13px;
+    margin: 5px 0px;
+  }
+
+  .exp-date {
+    font-size: 12px;
+    margin: 5px 0px;
+  }
+
+  .exp-role {
+    font-size: 12px;
+    margin: 5px 0px;
+  }
+
+  .exp-description {
+    font-size: 12px;
+  }
 }
