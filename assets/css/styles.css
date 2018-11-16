@@ -31,7 +31,7 @@ body {
 }
 
 .welcome {
-  margin-top: 180px;
+  margin-top: 15%;
 }
 
 .welcome-header {
@@ -76,8 +76,9 @@ body {
   font-weight: normal;
   line-height: normal;
   font-size: 32px;
+  margin-bottom: 25px;
   width: 82%;
-  height: 150px;
+  /*height: 150px;*/
   color: #2D3436;
 }
 
@@ -398,11 +399,12 @@ body {
   }
 
   .welcome-header {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .welcome-subheader {
     font-size: 25px;
+    width: 100%;
   }
 
   .welcome-tagline {
@@ -432,13 +434,14 @@ body {
 
   .navbar-link {
     margin-right: 25px;
+    margin-left: 0px;
   }
 
-  .welcome {
+/*  .welcome {
     margin-top: 100px;
-  }
+  }*/
 
-  .welcome-header {
+/*  .welcome-header {
     font-size: 36px;
     ;
   }
@@ -451,7 +454,7 @@ body {
   .welcome-tagline {
     font-size: 23px;
     margin-top: 0px;
-  }
+  }*/
 
   .footer {
     padding-bottom: 250px;
@@ -502,7 +505,7 @@ body {
     font-size: 14px;
   }
 
-  .welcome {
+/*  .welcome {
     margin-top: 25px;
   }
 
@@ -518,7 +521,7 @@ body {
  
   .welcome-tagline {
     font-size: 16px;
-  }
+  }*/
 
   .section-header {
     font-size: 16px;
