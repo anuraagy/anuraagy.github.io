@@ -400,16 +400,18 @@ body {
 
   .welcome-header {
     font-size: 35px;
-  }
-
-  .welcome-subheader {
-    font-size: 25px;
     width: 100%;
   }
 
+  .welcome-subheader {
+    font-size: 24px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
   .welcome-tagline {
-    font-size: 25px;
-    margin-top: 0px;
+    font-size: 22px;
+    margin-top: 10px;
   }
 }
 
@@ -435,6 +437,7 @@ body {
   .navbar-link {
     margin-right: 25px;
     margin-left: 0px;
+    display: none;
   }
 
 /*  .welcome {
