@@ -531,7 +531,7 @@ body {
   }*/
 
   .section-header {
-    font-size: 16px;
+    font-size: 1.3rem;
   }
 
   .section-body {
@@ -539,11 +539,11 @@ body {
   }
 
   .about {
-    height: 350px;
+    height: 550px;
   }
 
   .about-me-body {
-    font-size: 12px;
+    font-size: 1rem;
   }
 
   .experience {
@@ -551,22 +551,22 @@ body {
   }
 
   .exp-company {
-    font-size: 13px;
+    font-size: 1rem;
     margin: 5px 0px;
   }
 
   .exp-date {
-    font-size: 12px;
+    font-size: 1rem;
     margin: 5px 0px;
   }
 
   .exp-role {
-    font-size: 12px;
-    margin: 5px 0px;
+    font-size: 1rem;
+    margin: 10px 0px;
   }
 
   .exp-description {
-    font-size: 12px;
+    font-size: 1rem;
   }
 
   .projects {
@@ -575,17 +575,17 @@ body {
   }
 
   .project-name {
-    font-size: 12px;
+    font-size: 1rem;
   }
 
   .project-status {
-    font-size: 11px;
+    font-size: 0.7rem;
     padding: 2px 5px;
     border-width: 1px;
   }
 
   .project-description {
-    font-size: 12px;
+    font-size: 1rem;
   }
 
 
