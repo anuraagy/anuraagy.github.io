@@ -13,9 +13,10 @@ a {
   width: 40%;
   display: inline-block;
   float: left;
-  background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url("../img/me.jpg");
+  background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url("../img/me2.jpg");
   background-size: cover;
   height: 100vh;
+  background-position: center center;
 }
 
 .right-container {
@@ -141,4 +142,26 @@ a {
   position: absolute;
   bottom: 25px;
 
+}
+
+/* About page */
+.about {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+ /* height: 50%;
+  overflow: none;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;*/
+}
+
+.about-title {
+  color: #00AB6C;
+  font-size: 3rem;
+  margin-bottom: 0px;
+}
+
+.about-text {
+  font-size: 1.1rem;
 }
