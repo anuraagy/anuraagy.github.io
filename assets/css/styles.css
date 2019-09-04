@@ -1,598 +1,146 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:400:500:600');
-
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Exo', sans-serif;
+  margin: 0;
+  color: black;
 }
 
-.container {
-  padding: 25px 120px;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-container {
+  width: 40%;
+  display: inline-block;
+  float: left;
+  background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url("../img/me.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.right-container {
+  width: 60%;
+  height: 100vh;
+  display: inline-block;
+  float: right;
+  position: relative;
+}
+
+.content {
+  /*padding: 50px;*/
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+  /*min-height: 600px;*/
 }
 
 .navbar {
-  float: right;
-  height: 100px;
+  font-size: 1.1rem;
+  display: block;
+  padding: 50px;
 }
 
 .navbar-link {
   text-decoration: none;
+  color: black;
+}
+
+.nav-left {
   display: inline-block;
-  margin-left: 25px;
-  font-family: Muli;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 22px;
-  color: #000000;
+  float: left;
+  font-size: 1.5rem;
+  margin-top: -5px;
 }
 
-.navbar-link:hover {
-  color: #00B894;
+.nav-right {
+  display: inline-block;
+  float: right;
+}
+
+.nav-right .navbar-link {
+  margin-left: 40px; 
+}
+
+.title {
+  margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  /*width: 50%;*/
+    height: 50%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  /*margin-bottom: 170px;*/
+}
+
+.intro {
+  color: #00AB6C;
   font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
 }
 
-.welcome {
-  margin-top: 15%;
-}
-
-.welcome-header {
-  font-family: Muli;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 45px;
-  color: #2D3436;
-}
-
-.emphasize {
-  font-family: Muli;
-  font-style: normal;
+.name {
+  font-size: 3.5rem;
   font-weight: bold;
-  line-height: normal;
-  color: #00B894;
-}
-
-.welcome-tagline {
-  font-family: Muli;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 32px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-
-  color: #2D3436;
-  text-decoration: none;
-}
-
-.welcome-tagline:hover {
-  color: #00B894;
-  font-weight: bold;
-}
-
-.welcome-subheader {
+  margin-bottom: 10px;
   margin-top: 20px;
-  font-family: Muli;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 32px;
-  margin-bottom: 25px;
-  width: 82%;
-  /*height: 150px;*/
-  color: #2D3436;
 }
 
-.fa-envelope {
-  color: #00B894;
+.description {
+  margin-top: 0px;
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
+.follow {
+  font-size: 1.7rem;
+  font-weight: 400;
+
+}
+
+.footer {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 50px;
+  /*width: 100%;*/
+  /*bottom: 0;*/
+}
+
+.footer-links {
+  right: 50px;
+  position: absolute;
+  bottom: 25px;
+
 }
 
 .fa-twitter {
-  color: #1dcaff;
+  color: #1DA1F2;
+}
+
+.fa-envelope-open-text {
+  color: #EB2E2E;
 }
 
 .fa-linkedin {
   color: #0077B5;
 }
 
-.fa-github {
-  color: black;
+.fa-medium {
+  color: #11100f;
 }
+.footer-links a {
+  margin-left: 10px;
+  font-size: 1.2rem;
 
-.go-down {
-  font-size: 30px;
-}
-
-.lets-connect {
-  position: absolute;
-  right: 0;
-  bottom: 100px;
-  padding: 15px 25px;
-  padding-bottom: 35px;
-  z-index: 1;
-
-  background: rgba(0, 184, 148, 0.97);
-}
-
-.lets-connect-header {
-  font-family: Muli;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 22px;
-
-  color: #FFFFFF;
-
-  mix-blend-mode: normal;
-}
-
-.social-link {
-  font-family: Muli;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 18px;
-
-  color: #FFFFFF;
-  width: 33%;
-  opacity: 0.95;
-  display: inline-block;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.social-link:hover {
-  font-weight: bold;
-}
-
-.about {
-  position: relative;
-  margin-top: 10vh;
-  padding-top: 150px;
-  padding-bottom: 50px;
-  height: 350px;
-}
-
-.section-header {
-  width: 20%;
-  float: left;
-  margin: 0;
-
-  font-family: Muli;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 24px;
-
-  color: #00B894;
-}
-
-.section-body {
-  width: 80%;
-  float: right;
-}
-
-.about-me-body {
-  font-family: Muli;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 18px;
-
-  color: #000000;
-}
-
-.experience {
-  height: 350px;
-  margin-bottom: 250px;
-  padding-top: 100px;
-}
-
-.exp-head {
-  width: 100%;
-  float: left;
-}
-
-.experience-body {
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-
-.exp-company {
-  float: left;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 18px;
-  margin: 5px 0px;
-  color: #000000;
-}
-
-.exp-date {
-  float: right;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 18px;
-}
-
-.exp-description {
-  font-size: 16px;
-}
-
-.exp-role {
-  font-size: 18px;
-  margin: 5px 0px;
-}
-
-.projects {
-  height: 1600px;
-}
-
-.project-text {
-  width: 60%;
-  float: left;
-}
-
-.project-image {
-  width: 30%;
-  float: right;
-  border: 5px solid black;
-  border-radius: 5px;
-}
-
-.project-head {
-  width: 100%;
-  display: block;
-}
-
-.project-name {
-  font-size: 18px;
-  font-weight: bold;
-  float: left;
-  text-decoration: none;
-  margin-top: 5px;
-  color: black;
-}
-
-.project-name:visited {
-  color: black;
-}
-
-.project-status {
-  float: right;
-  border: 2px solid #00B894;
-  box-sizing: border-box;
-  border-radius: 5px;
-  font-family: Muli;
-  font-style: normal;
-  font-weight: bold;
-  line-height: normal;
-  font-size: 13px;
-  padding: 7px 10px;
-
-  color: #00B894;
-}
-
-.project-description {
-  float: left;
-  display: block;
-  width: 100%;
-  margin-top: 15px;
-}
-
-
-.hvr-underline-from-center {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-
-.hvr-underline-from-center:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #00B894;
-  height: 2px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.hvr-underline-from-center:hover:before,
-.hvr-underline-from-center:focus:before,
-.hvr-underline-from-center:active:before {
-  left: 0;
-  right: 0;
-}
-
-.footer {
-  /* text-align: center; */
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.footer-link {
-  text-decoration: none;
-  /* margin-left: 50px; */
-  margin-right: 100px;
-  color: black;
-  font-weight: bold !important;
-  font-size: 25px;
-  line-height: 20px;
-}
-
-.footer-link:hover {
-  font-weight: bolder;
-  color: #00B894 !important;
-}
-
-.footer-link:visited {
-  color: black;
-}
-
-.footer-links {
-  float: left;
 }
 
 .footer-name {
-  float: right;
-  font-size: 20px;
-  margin: 0;
-}
+  left: 50px;
+  position: absolute;
+  bottom: 25px;
 
-.project-body {
-  margin-bottom: 100px;
-}
-
-.remove-border {
-  border: none;
-}
-
-.welcome-scroll {
-  display: none;
-}
-
-/* Mobile time! */
-
-@media screen and (max-width: 1120px) {
-  .footer {
-    padding-bottom: 100px;
-    text-align: center;
-  }
-
-  .footer-link {
-    margin-left: 37.5px;
-    margin-right: 37.5px;
-  }
-
-  .footer-links {
-    width: 100%;
-  }
-
-  .footer-name {
-    margin-top: 25px;
-    width: 100%;
-  }
-
-  .projects {
-    margin-top: 400px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .container {
-    padding: 25px 80px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .section-header {
-    font-size: 20px;
-  }
-
-  .experience {
-    padding-top: 200px;
-  }
-
-  .welcome-header {
-    font-size: 35px;
-    width: 100%;
-  }
-
-  .welcome-subheader {
-    font-size: 24px;
-    width: 100%;
-    margin-top: 25px;
-  }
-
-  .welcome-tagline {
-    font-size: 22px;
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .section-header {
-    width: 100%;
-  }
-
-  .section-body {
-    width: 100%;
-    margin-top: 25px;
-  }
-
-  .projects {
-    margin-top: 500px;
-  }
-
-  .navbar {
-    text-align: left;
-    float: unset;
-  }
-
-  .navbar-link {
-    margin-right: 25px;
-    margin-left: 0px;
-    display: none;
-  }
-
-/*  .welcome {
-    margin-top: 100px;
-  }*/
-
-/*  .welcome-header {
-    font-size: 36px;
-    ;
-  }
-
-  .welcome-subheader {
-    font-size: 23px;
-    height: 150px;
-  }
-
-  .welcome-tagline {
-    font-size: 23px;
-    margin-top: 0px;
-  }*/
-
-  .footer {
-    padding-bottom: 250px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .projects {
-    height: 1200px;
-  }
-
-  .project-image {
-    display: none;
-    width: 0%;
-  }
-
-  .project-text {
-    width: 100%;
-  }
-
-  .project-body {
-    margin-bottom: 50px;
-  }
-
-  .footer {
-    padding-bottom: 50px;
-  }
-
-  .footer-name {
-    display: none;
-  }
-
-  .footer-link {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
-  }
-
-}
-
-@media screen and (max-width: 500px) {
-  .container {
-    padding: 10px 25px;
-  }
-  
-
-  .navbar-link {
-    font-size: 14px;
-  }
-
-/*  .welcome {
-    margin-top: 25px;
-  }
-
-  .welcome-header {
-    font-size: 20px;
-  }
-
-  .welcome-subheader{
-    font-size: 16px;
-    height: 100px;  
-    margin-top: 15px;
-  }
- 
-  .welcome-tagline {
-    font-size: 16px;
-  }*/
-
-  .section-header {
-    font-size: 1.3rem;
-  }
-
-  .section-body {
-    margin-top: 20px;
-  }
-
-  .about {
-    height: 550px;
-  }
-
-  .about-me-body {
-    font-size: 1rem;
-  }
-
-  .experience {
-    padding-top: 50px;
-  }
-
-  .exp-company {
-    font-size: 1rem;
-    margin: 5px 0px;
-  }
-
-  .exp-date {
-    font-size: 1rem;
-    margin: 5px 0px;
-  }
-
-  .exp-role {
-    font-size: 1rem;
-    margin: 10px 0px;
-  }
-
-  .exp-description {
-    font-size: 1rem;
-  }
-
-  .projects {
-    height: 950px;
-    margin-top: 400px;
-  }
-
-  .project-name {
-    font-size: 1rem;
-  }
-
-  .project-status {
-    font-size: 0.7rem;
-    padding: 2px 5px;
-    border-width: 1px;
-  }
-
-  .project-description {
-    font-size: 1rem;
-  }
-
-
-  .welcome-scroll {
-    margin-top: 50px;
-    display: block;
-    font-size: 2.5rem;
-    /*text-align: center;*/
-  }
 }
