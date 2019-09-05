@@ -74,7 +74,7 @@ projects.forEach((project, index) => {
            
           </div>
           <div class="info ${left}">
-            <a href="${project.link}" target="_blank"><i class="fas fa-external-link-alt" style="position: absolute; right: 20px; top: 20px;"></i></a>
+            <a href="${project.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
             <p class="project-type" >Web Application</p>
             <h2 class="project-name">${project.name}</h2>
             <p class="project-description">${project.description}</p>
