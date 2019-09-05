@@ -1,27 +1,57 @@
 const projects = [
     {
-        name: "AdPandas",
-        description: "AdPandas is a digita marketing company that uses a mix of AI and human input to buy digital ads for companies of all sizes. I designed and built their landing page.",
-        status: "Built",
-        image: "assets/img/adpandas.png",
-        link: "http://adpandas.com",
-        border: true
-    },
-    {
         name: "Abacus Growth",
         description: "Abacus Growth is a growth agency that helps startups and big companies scale their products. I built their landing page and help them with other technical tasks.",
         status: "Built",
         image: "assets/img/abacus.png",
         link: "http://abacusgrowth.co",
-        border: true
+        border: true,
+        type: "Developed"
     },
     {
         name: "Counterpoint",
         description: "Counterpoint is an online political cartoon newsletter that is being run by Pulitzer prize winning cartoonists from across the US. I built their landing page an help them with technical tasks.",
         status: "Built",
-        image: "assets/img/automailer.png",
+        image: "assets/img/counterpoint.png",
         link: "http://yourcounterpoint.com",
-        border: true
+        border: true,
+        type: "Designed & Developed"
+    },
+    {
+        name: "Startup Purdue",
+        description: "I designed and built Startup Purdue in conjunction with Purdue University in order to create a one-stop-shop for all things Purdue entrepreneurship.",
+        status: "Built",
+        image: "assets/img/startuppurdue.png",
+        link: "https://startuppurdue.com",
+        border: true,
+        type: "Designed & Developed"
+    },
+    {
+        name: "Built to Last",
+        description: "Built to Last is a podcast that I've started that profiles founders outside of Silicon Valley. I designed and built this website from scratch.",
+        status: "Built",
+        image: "assets/img/builttolast.png",
+        link: "https://builttolast.fm",
+        border: true,
+        type: "Designed & Developed"
+    },
+    {
+        name: "Purdue Startup Alumni",
+        description: "I designed and built a modular website for the Seattle Startup Purdue Network, that I co-founded. This website integrates with Airtable, Mailchimp, and more.",
+        status: "Built",
+        image: "assets/img/alumni.png",
+        link: "https://seattle.startuppurdue.com",
+        border: true,
+        type: "Designed & Developed"
+    },
+    {
+        name: "AdPandas",
+        description: "AdPandas is a digita marketing company that uses a mix of AI and human input to buy digital ads for companies of all sizes. I designed and built their landing page.",
+        status: "Built",
+        image: "assets/img/adpandas.png",
+        link: "http://adpandas.com",
+        border: true,
+        type: "Designed & Developed"
     },
     {
         name: "Automailer",
@@ -29,7 +59,8 @@ const projects = [
         status: "Built",
         image: "assets/img/automailer.png",
         link: "https://github.com/anuraagy/Automailer",
-        border: true
+        border: true,
+        type: "Designed & Developed"
     },
     {
         name: "Podium",
@@ -37,7 +68,8 @@ const projects = [
         status: "In Progress",
         image: "assets/img/podium.png",
         link: "https://ourpodium.org",
-        border: true
+        border: true,
+        type: "Designed & Developed"
     },
     {
         name: "BoilerKey - Chrome",
@@ -45,7 +77,8 @@ const projects = [
         status: "Launched",
         image: "assets/img/boilerkey.png",
         link: "https://chrome.google.com/webstore/detail/boilerkey-chrome/iffgcddljpnfeknpdidnemgifdfaamei/",
-        border: true
+        border: true,
+        type: "Designed & Developed"
     },
     {
         name: "PayUp",
@@ -53,7 +86,8 @@ const projects = [
         status: "In Progress",
         image: "https://blog.noveogroup.com/app/uploads/2017/10/1.png",
         link: "#",
-        border: false
+        border: false,
+        type: "Developed"
     },
     {
         name: "Pick Up Games Finder", 
@@ -61,7 +95,8 @@ const projects = [
         status: "Built",
         image: "assets/img/pickup.png",
         link: "https://github.com/anuraagy/Pickup-Games-Finder",
-        border: true
+        border: true,
+        type: "Designed & Developed"
     },
     {
         name: "FIFA Stat Tracker",
@@ -69,7 +104,8 @@ const projects = [
         status: "Launched",
         image: "assets/img/fifa.png",
         link: "http://fifatracker.herokuapp.com",
-        border: true
+        border: true,
+        type: "Designed & Developed"
     },
     {
         name: "Ask Mitch!",
@@ -77,7 +113,8 @@ const projects = [
         status: "Built",
         image: "https://images-na.ssl-images-amazon.com/images/G/01/kindle/merch/2017/ECHO/FSCompProd/cc-ra-360x240v2._CB515844478_.png",
         link: "https://github.com/anuraagy/EchoDining",
-        border: false
+        border: false,
+        type: "Designed & Developed"
     }
 ]
 
@@ -99,7 +136,7 @@ projects.forEach((project, index) => {
           </div>
           <div class="info ${left}">
             <a href="${project.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-            <p class="project-type" >Web Application</p>
+            <p class="project-type" >${project.type}</p>
             <h2 class="project-name">${project.name}</h2>
             <p class="project-description">${project.description}</p>
             <div class="project-tags">
