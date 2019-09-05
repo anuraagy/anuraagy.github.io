@@ -1,15 +1,15 @@
 const projects = [
     {
         name: "AdPandas",
-        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        description: "AdPandas is a digita marketing company that uses a mix of AI and human input to buy digital ads for companies of all sizes. I designed and built their landing page.",
         status: "Built",
         image: "assets/img/adpandas.png",
         link: "http://adpandas.com",
         border: true
     },
     {
-        name: "Abacus",
-        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        name: "Abacus Growth",
+        description: "Abacus Growth is a growth agency that helps startups and big companies scale their products. I built their landing page and help them with other technical tasks.",
         status: "Built",
         image: "assets/img/abacus.png",
         link: "http://abacusgrowth.co",
@@ -17,7 +17,7 @@ const projects = [
     },
     {
         name: "Counterpoint",
-        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        description: "Counterpoint is an online political cartoon newsletter that is being run by Pulitzer prize winning cartoonists from across the US. I built their landing page an help them with technical tasks.",
         status: "Built",
         image: "assets/img/automailer.png",
         link: "http://yourcounterpoint.com",
