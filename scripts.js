@@ -1,5 +1,13 @@
 const projects = [
     {
+        name: "Automailer",
+        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        status: "Built",
+        image: "assets/img/automailer.png",
+        link: "https://github.com/anuraagy/Automailer",
+        border: true
+    },
+    {
         name: "Podium",
         description: "An online platform that gives citizens the opportunity to donate to political campaigns in groups on an issue basis. We allow people to advocate for causes they care about to their politicians. Think change.org for politics",
         status: "In Progress",
@@ -49,29 +57,34 @@ const projects = [
     }
 ]
 
-projects.forEach((project) => {
+projects.forEach((project, index) => {
     const projectElement = document.createElement("div");
+    let left = "";
+    let right = ""
 
-    projectElement.setAttribute("class", "section-body project-body");
+    if(index % 2 === 0) {
+        left = "left";
+        right = "right";
+    }
+
     projectElement.innerHTML =
         `
-          <div class="project-text">
-            <div class="project-head">
-              <a class="project-name hvr-underline-from-center" href="${project.link}">
-                ${project.name}
-              </a>
-              <div class="project-status">
-                ${project.status}
-              </div>
-            </div>
-            <div class="project-description">
-              ${project.description}
+        <div class="project-content ">
+          <div class="preview ${right}" style="background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url(${project.image}); background-size: cover; background-position: center center;">
+           
+          </div>
+          <div class="info ${left}">
+            <a href="${project.link}" target="_blank"><i class="fas fa-external-link-alt" style="position: absolute; right: 20px; top: 20px;"></i></a>
+            <p class="project-type" >Web Application</p>
+            <h2 class="project-name">${project.name}</h2>
+            <p class="project-description">${project.description}</p>
+            <div class="project-tags">
+              <p class="tag">${project.status}</p>
             </div>
           </div>
-          <img class="project-image ${!project.border && "remove-border"}" src="${project.image}">
         </div>
     `;
 
-    const projectList = document.getElementById("project-list");
+    const projectList = document.getElementById("projects-container");
     projectList.appendChild(projectElement);
 })
