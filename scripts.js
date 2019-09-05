@@ -1,5 +1,29 @@
 const projects = [
     {
+        name: "AdPandas",
+        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        status: "Built",
+        image: "assets/img/adpandas.png",
+        link: "http://adpandas.com",
+        border: true
+    },
+    {
+        name: "Abacus",
+        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        status: "Built",
+        image: "assets/img/abacus.png",
+        link: "http://abacusgrowth.co",
+        border: true
+    },
+    {
+        name: "Counterpoint",
+        description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
+        status: "Built",
+        image: "assets/img/automailer.png",
+        link: "http://yourcounterpoint.com",
+        border: true
+    },
+    {
         name: "Automailer",
         description: "Built an email automation system for my clubs to send email blasts with templates, variables, and files",
         status: "Built",
@@ -70,7 +94,7 @@ projects.forEach((project, index) => {
     projectElement.innerHTML =
         `
         <div class="project-content ">
-          <div class="preview ${right}" style="background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url(${project.image}); background-size: cover; background-position: center center;">
+          <div class="preview ${right}" style="background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url(${project.image}); background-size: contain; background-repeat: no-repeat; background-position: center center;">
            
           </div>
           <div class="info ${left}">
