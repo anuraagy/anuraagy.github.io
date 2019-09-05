@@ -44,7 +44,6 @@ a {
   .about-right-container {
     height: initial;
   }
-
 }
 
 .content {
@@ -340,8 +339,14 @@ a {
   margin-bottom: 5px;
 }
 
-.project-footer, .about-footer {
+.project-footer {
   position: relative;
+}
+
+@media screen and (max-width: 640px) {
+  .about-footer {
+    position: relative;
+  }
 }
 
 .tag {
