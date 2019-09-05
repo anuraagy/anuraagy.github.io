@@ -31,6 +31,16 @@ a {
   background: white;
 }
 
+@media screen and (max-width: 1024px) {
+  .left-container {
+    display: none;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+}
+
 .content {
   /*padding: 50px;*/
   position: relative;
