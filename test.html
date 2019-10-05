@@ -2,18 +2,13 @@
 <html lang="en">
 
 <head>
-    <script>
-      
-      var allMetaElements = document.getElementsByTagName('meta');
-      //loop through and find the element you want
-      for (var i=0; i<allMetaElements.length; i++) { 
-        if (allMetaElements[i].getAttribute("name") == "og:image") { 
-           allMetaElements[i].setAttribute('content', "https://gallery.mailchimp.com/9de62dfa42df6cc2f9b1b593b/_compresseds/e4069fee-29ff-4f59-85cd-eee0b30bc088.jpg"); 
-           break;
-        } 
-      } 
-    </script>
+
     <title>Anuraag Yachamaneni</title>
+    <script>
+      var image = document.createElement("IMG");
+      image.setAttribute("src", "https://gallery.mailchimp.com/9de62dfa42df6cc2f9b1b593b/_compresseds/e4069fee-29ff-4f59-85cd-eee0b30bc088.jpg");
+     document.body.appendChild(image);
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -26,12 +21,12 @@
 
     <meta property="og:title" content="Counterpoint"/>
     <meta property="og:description" content="Cartoons delivered in your inbox. Just like the Paper.."/>
-    <meta property="og:image" content=""/>
     <meta property="og:url" content="http://anuraag.me"/>
     <meta property="og:type" content="website"/>
 </head>
 
 <body>
-
+  <img id="image" src="">
 </body>
+
 </html>
