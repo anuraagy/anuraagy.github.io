@@ -14,7 +14,7 @@ a {
   width: 40%;
   display: inline-block;
   float: left;
-  background: linear-gradient(180deg, rgba(46, 204, 113, 0.59) 0%, rgba(46, 49, 146, 0.4661) 100%), url("../img/me2.jpg");
+  background: linear-gradient(0deg, rgba(46, 204, 113, 0.3) 0%, rgba(46, 49, 146, 0.4661) 100%), url("../img/me4.jpg");
   background-size: cover;
   height: 100vh;
   background-position: center center;
